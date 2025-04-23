@@ -9,9 +9,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const skills = [
-    { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'REST APIs', 'GraphQL'] },
-    { category: 'Tools & Others', items: ['Git', 'GitHub', 'VS Code', 'Figma', 'Adobe XD', 'Responsive Design', 'Accessibility'] },
+    { category: 'Frontend', items: ["Next.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS",] },
+    { category: 'Backend', items: ["Node.js", "Next.js", "Python", "Django", "Flask", "FastAPI"] },
+    { category: 'Tools & Others', items: ["Git", "GitHub", "GitHub Actions", "VS Code", "AWS", "Vercel"] },
+    { category: 'Mobile', items: ["Flutter", "Dart", "Adroid", "iOS", "AdMob"] },
   ];
 
   const experiences = [
@@ -55,25 +56,29 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div className="md:col-span-1">
             <div className="aspect-square relative rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 mb-6">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                [Profile Photo]
-              </div>
+              <Image
+                src="/images/Akira_0809.jpg" // 画像のパスを指定
+                alt="Profile Photo"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+              />
             </div>
             
             <div className="space-y-4">
               <div>
                 <h3 className="text-lg font-semibold">Location</h3>
-                <p className="text-gray-600 dark:text-gray-400">Tokyo, Japan</p>
+                <p className="text-gray-600 dark:text-gray-400">Osaka, Japan</p>
               </div>
               
               <div>
                 <h3 className="text-lg font-semibold">Languages</h3>
-                <p className="text-gray-600 dark:text-gray-400">Japanese (Native), English (Fluent)</p>
+                <p className="text-gray-600 dark:text-gray-400">Japanese</p>
               </div>
               
               <div>
                 <h3 className="text-lg font-semibold">Interests</h3>
-                <p className="text-gray-600 dark:text-gray-400">Web Development, UI/UX Design, Photography, Travel</p>
+                <p className="text-gray-600 dark:text-gray-400">Development, Movie, Travel, Game</p>
               </div>
             </div>
           </div>
