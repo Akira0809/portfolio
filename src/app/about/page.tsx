@@ -17,36 +17,24 @@ export default function AboutPage() {
 
   const experiences = [
     {
-      period: '2023 - Present',
-      title: 'Senior Frontend Developer',
-      company: 'Tech Company Inc.',
-      description: 'Leading frontend development for enterprise web applications. Implementing modern React patterns and optimizing performance.',
-    },
-    {
-      period: '2020 - 2023',
-      title: 'Web Developer',
-      company: 'Digital Agency Co.',
-      description: 'Developed responsive websites and web applications for various clients. Worked with React, Next.js, and various CSS frameworks.',
-    },
-    {
-      period: '2018 - 2020',
-      title: 'UI/UX Designer',
-      company: 'Creative Studio',
-      description: 'Designed user interfaces for web and mobile applications. Created wireframes, prototypes, and visual designs.',
-    },
+      period: '2024 - ',
+      title: t('about.experienceDesc0'),
+      company: t('about.experienceDesc0Company'),
+      description: t('about.experienceDesc0Description'),
+    }
   ];
 
   const education = [
     {
-      period: '2014 - 2018',
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Technology',
+      period: '2020 - 2024',
+      degree: t('about.educationDesc0'),
+      department: t('about.educationDesc0Department'),
     },
     {
-      period: '2020',
-      degree: 'UI/UX Design Certification',
-      institution: 'Design Academy',
-    },
+      period: '2025 -',
+      degree: t('about.educationDesc1'),
+      department: t('about.educationDesc1Department'),
+    }
   ];
 
   return (
@@ -68,17 +56,17 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="text-lg font-semibold">{t('about.location')}</h3>
-                <p className="text-gray-600 dark:text-gray-400">Osaka, Japan</p>
+                <p className="text-gray-600 dark:text-gray-400">{t('about.locationDesc')}</p>
               </div>
 
               <div>
                 <h3 className="text-lg font-semibold">{t('about.languages')}</h3>
-                <p className="text-gray-600 dark:text-gray-400">Japanese</p>
+                <p className="text-gray-600 dark:text-gray-400">{t('about.japanese')}</p>
               </div>
 
               <div>
                 <h3 className="text-lg font-semibold">{t('about.interests')}</h3>
-                <p className="text-gray-600 dark:text-gray-400">Development, Movie, Travel, Game</p>
+                <p className="text-gray-600 dark:text-gray-400">{t('about.interestsDesc')}</p>
               </div>
             </div>
           </div>
@@ -93,14 +81,6 @@ export default function AboutPage() {
 
               <p>
                 {t('about.bio2')}
-              </p>
-
-              <p>
-                {t('about.bio3')}
-              </p>
-
-              <p>
-                {t('about.bio4')}
               </p>
             </div>
           </div>
@@ -151,7 +131,7 @@ export default function AboutPage() {
               <div className="absolute left-[-8px] top-0 w-4 h-4 bg-purple-500 rounded-full"></div>
               <div className="mb-1 text-sm font-medium text-purple-600 dark:text-purple-400">{edu.period}</div>
               <h3 className="text-xl font-bold">{edu.degree}</h3>
-              <div className="text-gray-600 dark:text-gray-400">{edu.institution}</div>
+              <div className="text-gray-600 dark:text-gray-400">{edu.department}</div>
             </div>
           ))}
         </div>

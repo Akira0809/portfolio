@@ -108,32 +108,36 @@ const translations: Translations = {
     ja: 'はじめまして、池内 晶です',
   },
   'about.bio1': {
-    en: "I'm a passionate web developer and designer with over 5 years of experience creating modern, responsive, and user-friendly websites and applications.",
-    ja: '私は5年以上の経験を持つ情熱的なウェブ開発者およびデザイナーで、モダンでレスポンシブ、そしてユーザーフレンドリーなウェブサイトやアプリケーションを制作しています。',
+    en: "My name is Akira Ikeuchi. I am a first-year student at Kansai University, majoring in Business Data Science. I began programming in high school and started my own company at the age of 18. Since then, I have taken on multiple projects and have received several awards in hackathons.",
+    ja: '池内 晶（いけうち あきら）と申します。関西大学ビジネスデータサイエンス学部に所属する大学1年生です。高校時代よりプログラミングに取り組み、18歳で起業。これまでに複数の案件を受託し、ハッカソンでは受賞経験も重ねてまいりました。',
   },
   'about.bio2': {
-    en: 'My journey in web development began during my university years, where I discovered my passion for creating digital experiences. Since then, I\'ve worked with various technologies and frameworks, always staying up-to-date with the latest trends and best practices.',
-    ja: '私のウェブ開発の旅は大学時代に始まり、そこでデジタル体験を創造することへの情熱を発見しました。それ以来、さまざまな技術やフレームワークを使用し、常に最新のトレンドとベストプラクティスを把握しています。',
-  },
-  'about.bio3': {
-    en: 'I specialize in frontend development with React and Next.js, but I also have experience with backend technologies. I believe in creating accessible, performant, and visually appealing web experiences that solve real problems for users.',
-    ja: '私はReactとNext.jsを使用したフロントエンド開発を専門としていますが、バックエンド技術の経験もあります。ユーザーの実際の問題を解決するアクセシブルで高性能、そして視覚的に魅力的なウェブ体験の創造を信条としています。',
-  },
-  'about.bio4': {
-    en: "When I'm not coding, you can find me exploring new design trends, taking photographs, or traveling to new places. I'm always open to new opportunities and collaborations, so feel free to reach out!",
-    ja: 'コーディングをしていないときは、新しいデザイントレンドを探索したり、写真を撮ったり、新しい場所を旅したりしています。常に新しい機会やコラボレーションに開かれていますので、お気軽にご連絡ください！',
+    en: 'Constantly seeking new challenges, I live by the belief that “there\'s no time to stand still.” Through my hobbies—gaming, traveling, and watching movies—I continue to expand my creativity. By combining technical skills with imagination, I aim to become a trailblazer for the next generation.',
+    ja: '常に新しい挑戦を求め、「止まっている暇はない」という信念のもと、ゲーム・旅行・映画などの趣味を通じて創造力を広げています。技術と発想力を掛け合わせ、次の時代を切り開く存在を目指しています。',
   },
   'about.location': {
     en: 'Location',
     ja: '所在地',
   },
+  'about.locationDesc': {
+    en: 'Osaka, Japan',
+    ja: '大阪府',
+  },
   'about.languages': {
     en: 'Languages',
     ja: '言語',
   },
+  'about.japanese': {
+    en: 'Japanese (Native)',
+    ja: '日本語（母国語）',
+  },
   'about.interests': {
     en: 'Interests',
     ja: '興味・関心',
+  },
+  'about.interestsDesc': {
+    en: 'Development, Movies, Travel, Gaming',
+    ja: '開発、映画、旅行、ゲーム',
   },
   'about.skills': {
     en: 'Skills',
@@ -143,9 +147,37 @@ const translations: Translations = {
     en: 'Experience',
     ja: '経歴',
   },
+  'about.experienceDesc0': {
+    en: 'COROLE Entrepreneurship Corporation',
+    ja: '株式会社COROLE 起業',
+  },
+  'about.experienceDesc0Company': {
+    en: 'COROLE Inc.',
+    ja: '株式会社COROLE',
+  },
+  'about.experienceDesc0Description': {
+    en: 'We are commissioned to work on a variety of projects and focus on web development and mobile app development.',
+    ja: '様々な案件を受託し、ウェブ開発とモバイルアプリ開発を中心に活動しています。',
+  },
   'about.education': {
     en: 'Education',
     ja: '学歴',
+  },
+  'about.educationDesc0': {
+    en: 'National Institute of Technology, Kagawa College, Department of Information Engineering',
+    ja: '香川高等専門学校',
+  },
+  'about.educationDesc0Department': {
+    en: 'Department of Information Engineering',
+    ja: '情報工学科',
+  },
+  'about.educationDesc1': {
+    en: 'Kansai University',
+    ja: '関西大学',
+  },
+  'about.educationDesc1Department': {
+    en: 'Business Data Science',
+    ja: 'ビジネスデータサイエンス学部',
   },
   
   // Works Page
