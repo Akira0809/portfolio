@@ -8,9 +8,9 @@ export default function Footer() {
   const { t } = useLanguage();
   
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/' },
-    { name: 'Twitter', url: 'https://twitter.com/' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/' },
+    { name: 'GitHub', url: 'https://github.com/Akira0809' },
+    { name: 'X', url: 'https://x.com/Akira08092' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/akira-ikeuchi-6a9b12361/' },
   ];
 
   return (
