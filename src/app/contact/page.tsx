@@ -1,14 +1,12 @@
-import type { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import Section from '@/components/Section';
-
-export const metadata: Metadata = {
-  title: 'Contact Me | Akira Portfolio',
-  description: 'Get in touch with me for work inquiries, collaborations, or just to say hello.',
-};
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function ContactPage() {
+  const { t } = useLanguage(); // Assuming you have a useLanguage hook for translations
   const contactMethods = [
     {
       name: 'Email',
@@ -58,11 +56,10 @@ export default function ContactPage() {
 
   return (
     <>
-      <Section title="Contact Me">
+      <Section title={t('contact.title')}>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            I&#39;m always interested in hearing about new projects, opportunities, or just connecting with fellow developers and designers.
-            Feel free to reach out through any of the channels below.
+            {t('contact.description')}
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -83,110 +80,27 @@ export default function ContactPage() {
               </Link>
             ))}
           </div>
-          
-          <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-lg border border-gray-200 dark:border-gray-800">
-            <h3 className="text-xl font-bold mb-4">Send Me a Message</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              Prefer to send a direct message? Fill out the form below and I&apos;ll get back to you as soon as possible.
-            </p>
-            
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                  placeholder="What is this regarding?"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                  placeholder="Your message here..."
-                  required
-                ></textarea>
-              </div>
-              
-              <div>
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-foreground text-background font-medium rounded-md hover:bg-opacity-90 transition-colors"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
       </Section>
       
-      <Section title="Availability" className="bg-gray-50 dark:bg-gray-900">
+      <Section title={t('contact.availability')} className="bg-gray-50 dark:bg-gray-900">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-block px-6 py-3 mb-6 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full font-medium">
-            Currently Available for Projects
+            {t('contact.available')}
           </div>
           
-          <h3 className="text-2xl font-bold mb-4">Looking for a developer for your next project?</h3>
+          <h3 className="text-2xl font-bold mb-4">{t('contact.lookingFor')}</h3>
           
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            I&apos;m currently available for freelance work and open to discussing new opportunities.
-            Whether you need a complete website, a specific feature, or consultation on your project,
-            I&apos;d be happy to help bring your vision to life.
+            {t('contact.availableDesc')}
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="mailto:hello@akira-portfolio.com" 
-              className="px-6 py-3 bg-foreground text-background font-medium rounded-md hover:bg-opacity-90 transition-colors"
-            >
-              Email Me
-            </Link>
-            <Link 
               href="/works" 
               className="px-6 py-3 bg-transparent border border-foreground text-foreground font-medium rounded-md hover:bg-foreground hover:bg-opacity-10 transition-colors"
             >
-              View My Work
+              {t('contact.viewWorks')}
             </Link>
           </div>
         </div>

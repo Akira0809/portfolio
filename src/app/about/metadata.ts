@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Me | Akira Portfolio',
-  description: 'Learn about my skills, experience, and background as a web developer and designer.',
+  title: 'About Me',
+  description: 'A brief introduction of myself and a description of my background, education, and skills.',
 };

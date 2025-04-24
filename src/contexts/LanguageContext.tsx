@@ -223,53 +223,25 @@ const translations: Translations = {
     en: "I'm always interested in hearing about new projects, opportunities, or just connecting with fellow developers and designers. Feel free to reach out through any of the channels below.",
     ja: '新しいプロジェクト、機会について聞くこと、または同業の開発者やデザイナーとつながることに常に興味があります。以下のいずれかのチャネルを通じてお気軽にご連絡ください。',
   },
-  'contact.sendMessage': {
-    en: 'Send Me a Message',
-    ja: 'メッセージを送る',
-  },
-  'contact.formDesc': {
-    en: "Prefer to send a direct message? Fill out the form below and I'll get back to you as soon as possible.",
-    ja: '直接メッセージを送信したいですか？以下のフォームに記入していただければ、できるだけ早くご連絡いたします。',
-  },
-  'contact.name': {
-    en: 'Name',
-    ja: '名前',
-  },
-  'contact.email': {
-    en: 'Email',
-    ja: 'メールアドレス',
-  },
-  'contact.subject': {
-    en: 'Subject',
-    ja: '件名',
-  },
-  'contact.message': {
-    en: 'Message',
-    ja: 'メッセージ',
-  },
-  'contact.send': {
-    en: 'Send Message',
-    ja: '送信',
-  },
   'contact.availability': {
     en: 'Availability',
     ja: '稼働状況',
   },
   'contact.available': {
     en: 'Currently Available for Projects',
-    ja: '現在プロジェクト受付可能',
+    ja: '現在、プロジェクトを受け付けています',
   },
   'contact.lookingFor': {
     en: 'Looking for a developer for your next project?',
     ja: '次のプロジェクトの開発者をお探しですか？',
   },
   'contact.availableDesc': {
-    en: "I'm currently available for freelance work and open to discussing new opportunities. Whether you need a complete website, a specific feature, or consultation on your project, I'd be happy to help bring your vision to life.",
-    ja: '現在、フリーランスの仕事を受け付けており、新しい機会について話し合うことに開かれています。完全なウェブサイト、特定の機能、またはプロジェクトに関するコンサルテーションが必要な場合でも、あなたのビジョンを実現するお手伝いをさせていただきます。',
+    en: "I am currently working as an engineer at COROLE Inc. At COROLE Inc., I am working on various projects under contract, focusing on web development and mobile application development.",
+    ja: '現在、株式会社COROLEにてエンジニアとして活動しています。株式会社COROLEでは、様々な案件を受託し、ウェブ開発とモバイルアプリ開発を中心に活動しています。',
   },
-  'contact.emailMe': {
-    en: 'Email Me',
-    ja: 'メールを送る',
+  'contact.viewWorks': {
+    en: 'View My Work',
+    ja: '制作実績を見る',
   },
   
   // Footer
