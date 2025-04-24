@@ -104,8 +104,8 @@ const translations: Translations = {
     ja: '自己紹介',
   },
   'about.hello': {
-    en: "Hello, I'm Akira",
-    ja: 'はじめまして、アキラです',
+    en: "Hello, I'm Ikeuchi Akira",
+    ja: 'はじめまして、池内 晶です',
   },
   'about.bio1': {
     en: "I'm a passionate web developer and designer with over 5 years of experience creating modern, responsive, and user-friendly websites and applications.",
