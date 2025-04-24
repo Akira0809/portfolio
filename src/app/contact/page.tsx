@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Section from '@/components/Section';
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ export default function ContactPage() {
       name: 'X',
       value: '@Akira08092',
       icon: (
-        <img
+        <Image
           src="/images/x-logo.png"
           alt="X Logo"
           width={24}
@@ -60,7 +61,7 @@ export default function ContactPage() {
       <Section title="Contact Me">
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            I'm always interested in hearing about new projects, opportunities, or just connecting with fellow developers and designers.
+            I&#39;m always interested in hearing about new projects, opportunities, or just connecting with fellow developers and designers.
             Feel free to reach out through any of the channels below.
           </p>
           
@@ -86,7 +87,7 @@ export default function ContactPage() {
           <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-lg border border-gray-200 dark:border-gray-800">
             <h3 className="text-xl font-bold mb-4">Send Me a Message</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              Prefer to send a direct message? Fill out the form below and I'll get back to you as soon as possible.
+              Prefer to send a direct message? Fill out the form below and I&apos;ll get back to you as soon as possible.
             </p>
             
             <form className="space-y-6">
@@ -169,9 +170,9 @@ export default function ContactPage() {
           <h3 className="text-2xl font-bold mb-4">Looking for a developer for your next project?</h3>
           
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            I'm currently available for freelance work and open to discussing new opportunities.
+            I&apos;m currently available for freelance work and open to discussing new opportunities.
             Whether you need a complete website, a specific feature, or consultation on your project,
-            I'd be happy to help bring your vision to life.
+            I&apos;d be happy to help bring your vision to life.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">

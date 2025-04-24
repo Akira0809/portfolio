@@ -1,6 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
 import Section from '@/components/Section';
 import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';

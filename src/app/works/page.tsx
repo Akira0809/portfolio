@@ -57,8 +57,8 @@ export default function WorksPage() {
     <>
       <Section title="My Works">
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-3xl">
-          Here's a collection of my recent projects. Each project represents different challenges 
-          and solutions I've worked on. Click on any project to learn more or visit the live site.
+          Here&apos;s a collection of my recent projects. Each project represents different challenges 
+          and solutions I&apos;ve worked on. Click on any project to learn more or visit the live site.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -70,8 +70,8 @@ export default function WorksPage() {
       
       <Section title="Client Projects" className="bg-gray-50 dark:bg-gray-900">
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-3xl">
-          I've had the pleasure of working with various clients across different industries. 
-          Here are some of the projects I've contributed to as part of agency work.
+          I&apos;ve had the pleasure of working with various clients across different industries. 
+          Here are some of the projects I&apos;ve contributed to as part of agency work.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -111,8 +111,8 @@ export default function WorksPage() {
       
       <Section title="Open Source Contributions">
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-3xl">
-          I'm passionate about giving back to the community through open source contributions. 
-          Here are some projects I've contributed to or created.
+          I&apos;m passionate about giving back to the community through open source contributions. 
+          Here are some projects I&apos;ve contributed to or created.
         </p>
         
         <div className="space-y-6">
