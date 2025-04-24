@@ -1,13 +1,14 @@
+'use client';
+
 import type { Metadata } from 'next';
 import Section from '@/components/Section';
 import Image from 'next/image';
+import { useLanguage } from '@/contexts/LanguageContext';
 
-export const metadata: Metadata = {
-  title: 'About Me | Akira Portfolio',
-  description: 'Learn about my skills, experience, and background as a web developer and designer.',
-};
+// Metadata is in a separate file for client components
 
 export default function AboutPage() {
+  const { t } = useLanguage();
   const skills = [
     { category: 'Frontend', items: ["Next.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS",] },
     { category: 'Backend', items: ["Node.js", "Next.js", "Python", "Django", "Flask", "FastAPI"] },
@@ -52,7 +53,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Profile Section */}
-      <Section title="About Me">
+      <Section title={t('about.title')}>
         <div className="grid md:grid-cols-3 gap-10 items-start">
           <div className="md:col-span-1">
             <div className="aspect-square relative rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 mb-6">
@@ -64,58 +65,51 @@ export default function AboutPage() {
                 className="rounded-xl"
               />
             </div>
-            
+
             <div className="space-y-4">
               <div>
-                <h3 className="text-lg font-semibold">Location</h3>
+                <h3 className="text-lg font-semibold">{t('about.location')}</h3>
                 <p className="text-gray-600 dark:text-gray-400">Osaka, Japan</p>
               </div>
-              
+
               <div>
-                <h3 className="text-lg font-semibold">Languages</h3>
+                <h3 className="text-lg font-semibold">{t('about.languages')}</h3>
                 <p className="text-gray-600 dark:text-gray-400">Japanese</p>
               </div>
-              
+
               <div>
-                <h3 className="text-lg font-semibold">Interests</h3>
+                <h3 className="text-lg font-semibold">{t('about.interests')}</h3>
                 <p className="text-gray-600 dark:text-gray-400">Development, Movie, Travel, Game</p>
               </div>
             </div>
           </div>
-          
+
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-bold mb-4 font-mono">Hello, I'm Akira</h2>
-            
+            <h2 className="text-2xl font-bold mb-4 font-mono">{t('about.hello')}</h2>
+
             <div className="prose dark:prose-invert max-w-none">
               <p>
-                I'm a passionate web developer and designer with over 5 years of experience creating 
-                modern, responsive, and user-friendly websites and applications.
+                {t('about.bio1')}
               </p>
-              
+
               <p>
-                My journey in web development began during my university years, where I discovered my 
-                passion for creating digital experiences. Since then, I've worked with various 
-                technologies and frameworks, always staying up-to-date with the latest trends and best practices.
+                {t('about.bio2')}
               </p>
-              
+
               <p>
-                I specialize in frontend development with React and Next.js, but I also have experience 
-                with backend technologies. I believe in creating accessible, performant, and visually 
-                appealing web experiences that solve real problems for users.
+                {t('about.bio3')}
               </p>
-              
+
               <p>
-                When I'm not coding, you can find me exploring new design trends, taking photographs, 
-                or traveling to new places. I'm always open to new opportunities and collaborations, 
-                so feel free to reach out!
+                {t('about.bio4')}
               </p>
             </div>
           </div>
         </div>
       </Section>
-      
+
       {/* Skills Section */}
-      <Section title="Skills" className="bg-gray-50 dark:bg-gray-900">
+      <Section title={t('about.skills')} className="bg-gray-50 dark:bg-gray-900">
         <div className="grid md:grid-cols-3 gap-8">
           {skills.map((skillGroup) => (
             <div key={skillGroup.category} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
@@ -134,9 +128,9 @@ export default function AboutPage() {
           ))}
         </div>
       </Section>
-      
+
       {/* Experience Section */}
-      <Section title="Experience">
+      <Section title={t('about.experience')}>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800 last:border-0 last:pb-0">
@@ -149,9 +143,9 @@ export default function AboutPage() {
           ))}
         </div>
       </Section>
-      
+
       {/* Education Section */}
-      <Section title="Education" className="bg-gray-50 dark:bg-gray-900">
+      <Section title={t('about.education')} className="bg-gray-50 dark:bg-gray-900">
         <div className="space-y-8">
           {education.map((edu, index) => (
             <div key={index} className="relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800 last:border-0 last:pb-0">

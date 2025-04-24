@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Section from '@/components/Section';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Home() {
+  const { t } = useLanguage();
   return (
     <>
       {/* Hero Section */}
@@ -12,11 +16,11 @@ export default function Home() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-mono">
             <span className="block">Akira</span>
-            <span className="block mt-2 text-2xl md:text-4xl text-gray-600 dark:text-gray-400">Web Developer & Designer</span>
+            <span className="block mt-2 text-2xl md:text-4xl text-gray-600 dark:text-gray-400">{t('home.title')}</span>
           </h1>
           
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-gray-700 dark:text-gray-300">
-            Creating beautiful, functional, and user-friendly web experiences with modern technologies.
+            {t('home.subtitle')}
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -24,37 +28,34 @@ export default function Home() {
               href="/works" 
               className="px-6 py-3 bg-foreground text-background font-medium rounded-md hover:bg-opacity-90 transition-colors"
             >
-              View My Work
+              {t('home.viewWork')}
             </Link>
             <Link 
               href="/contact" 
               className="px-6 py-3 bg-transparent border border-foreground text-foreground font-medium rounded-md hover:bg-foreground hover:bg-opacity-10 transition-colors"
             >
-              Contact Me
+              {t('home.contactMe')}
             </Link>
           </div>
         </div>
       </section>
       
       {/* About Preview Section */}
-      <Section title="About Me" className="bg-gray-50 dark:bg-gray-900">
+      <Section title={t('home.aboutTitle')} className="bg-gray-50 dark:bg-gray-900">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Frontend Developer & UI Designer</h3>
+            <h3 className="text-xl font-semibold mb-4">{t('home.aboutRole')}</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
-              I'm a passionate web developer with expertise in modern frontend technologies. 
-              I specialize in creating responsive, accessible, and performant web applications 
-              with a focus on user experience.
+              {t('home.aboutDesc1')}
             </p>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              With a background in both design and development, I bring a unique perspective 
-              to every project, ensuring both aesthetic appeal and technical excellence.
+              {t('home.aboutDesc2')}
             </p>
             <Link 
               href="/about" 
               className="inline-flex items-center text-blue-600 dark:text-blue-400 font-medium hover:underline"
             >
-              Learn more about me
+              {t('home.learnMore')}
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -79,7 +80,7 @@ export default function Home() {
       </Section>
       
       {/* Featured Works Preview */}
-      <Section title="Featured Works">
+      <Section title={t('home.worksTitle')}>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[1, 2, 3].map((i) => (
             <div 
@@ -94,13 +95,13 @@ export default function Home() {
               <div className="p-5">
                 <h3 className="text-xl font-bold mb-2">Project Title {i}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
-                  A brief description of the project, highlighting key features and technologies used.
+                  {t('home.projectDesc')}
                 </p>
                 <Link 
                   href={`/works#project-${i}`}
                   className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  View Details
+                  {t('home.viewDetails')}
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -114,23 +115,22 @@ export default function Home() {
             href="/works" 
             className="px-6 py-3 bg-transparent border border-foreground text-foreground font-medium rounded-md hover:bg-foreground hover:bg-opacity-10 transition-colors"
           >
-            View All Projects
+            {t('home.viewAllProjects')}
           </Link>
         </div>
       </Section>
       
       {/* Contact CTA */}
-      <Section title="Get In Touch" className="bg-gray-50 dark:bg-gray-900">
+      <Section title={t('home.getInTouch')} className="bg-gray-50 dark:bg-gray-900">
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
-            Interested in working together? I'm always open to discussing new projects, 
-            creative ideas or opportunities to be part of your vision.
+            {t('home.contactDesc')}
           </p>
           <Link 
             href="/contact" 
             className="px-8 py-4 bg-foreground text-background font-medium rounded-md hover:bg-opacity-90 transition-colors text-lg"
           >
-            Contact Me
+            {t('home.contactMe')}
           </Link>
         </div>
       </Section>

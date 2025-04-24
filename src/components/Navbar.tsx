@@ -3,16 +3,19 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Works', path: '/works' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.about'), path: '/about' },
+    { name: t('nav.works'), path: '/works' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   return (
@@ -40,6 +43,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
           
           {/* Mobile menu button */}
@@ -82,6 +86,9 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
+            <div className="px-3 py-2 mt-2 border-t border-gray-200 dark:border-gray-700">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}

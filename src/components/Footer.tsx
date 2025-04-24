@@ -1,7 +1,11 @@
+'use client';
+
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
   
   const socialLinks = [
     { name: 'GitHub', url: 'https://github.com/' },
@@ -15,7 +19,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              © {currentYear} akira-portfolio. All rights reserved.
+              © {currentYear} akira-portfolio. {t('footer.rights')}
             </p>
           </div>
           
