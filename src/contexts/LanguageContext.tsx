@@ -143,6 +143,34 @@ const translations: Translations = {
     en: 'Skills',
     ja: 'スキル',
   },
+  'about.qualifications': {
+    en: 'Qualifications',
+    ja: '資格',
+  },
+  'about.qualification0': {
+    en: 'IT Passport Examination',
+    ja: 'ITパスポート',
+  },
+  'about.qualification0Desc': {
+    en: 'National certification proving basic knowledge of IT',
+    ja: 'ITに関する基礎知識を証明する国家資格',
+  },
+  'about.qualification1': {
+    en: 'Python 3 Certified Engineer Basic Examination',
+    ja: 'Python3エンジニア認定基礎試験',
+  },
+  'about.qualification1Desc': {
+    en: 'Private certification test for basic Python syntax and programming fundamentals',
+    ja: 'Pythonの基本文法とプログラミングの基礎知識を問う民間資格試験',
+  },
+  'about.qualification2': {
+    en: 'JDLA Deep Learning for GENERAL',
+    ja: 'G検定',
+  },
+  'about.qualification2Desc': {
+    en: 'A certification test for acquiring AI/deep learning literacy conducted by the Japan Deep Learning Association (JDLA).',
+    ja: '一般社団法人日本ディープラーニング協会（JDLA）が実施する、AI・ディープラーニングの活⽤リテラシー習得のための検定試験',
+  },
   'about.experience': {
     en: 'Experience',
     ja: '経歴',

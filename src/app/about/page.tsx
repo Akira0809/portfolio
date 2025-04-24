@@ -108,8 +108,28 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      {/* Qualifications Section */}
+      <Section title={t('about.qualifications')}>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4">{t('about.qualification0')}</h3>
+            <p className="text-gray-600 dark:text-gray-400">{t('about.qualification0Desc')}</p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4">{t('about.qualification1')}</h3>
+            <p className="text-gray-600 dark:text-gray-400">{t('about.qualification1Desc')}</p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4">{t('about.qualification2')}</h3>
+            <p className="text-gray-600 dark:text-gray-400">{t('about.qualification2Desc')}</p>
+          </div>
+        </div>
+      </Section>
+
       {/* Experience Section */}
-      <Section title={t('about.experience')}>
+      <Section title={t('about.experience')} className="bg-gray-50 dark:bg-gray-900">
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800 last:border-0 last:pb-0">
@@ -124,7 +144,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Education Section */}
-      <Section title={t('about.education')} className="bg-gray-50 dark:bg-gray-900">
+      <Section title={t('about.education')}>
         <div className="space-y-8">
           {education.map((edu, index) => (
             <div key={index} className="relative pl-8 pb-8 border-l-2 border-gray-200 dark:border-gray-800 last:border-0 last:pb-0">
