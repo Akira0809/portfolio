@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export interface Work {
   title: string;
@@ -14,6 +17,7 @@ interface WorkCardProps {
 }
 
 export default function WorkCard({ work }: WorkCardProps) {
+  const { t } = useLanguage();
   return (
     <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
       <div className="relative h-48 w-full">
@@ -51,7 +55,7 @@ export default function WorkCard({ work }: WorkCardProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
           >
-            View Project
+            {t('works.viewProject')}
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

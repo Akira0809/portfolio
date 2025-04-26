@@ -23,7 +23,7 @@ export default function ContactPage() {
       value: '@Akira08092',
       icon: (
         <Image
-          src="/images/x-logo.png"
+          src="/images/logo/x-logo.png"
           alt="X Logo"
           width={24}
           height={24}

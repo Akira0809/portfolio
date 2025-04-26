@@ -241,6 +241,30 @@ const translations: Translations = {
     en: 'View on GitHub',
     ja: 'GitHubで見る',
   },
+  'works.hackathonTitle': {
+    en: 'Hackathon Awards',
+    ja: 'ハッカソン受賞歴',
+  },
+  'works.hackathonDescription': {
+    en: 'A collection of awards I have received in hackathons. I showcase my experience in developing innovative products in a short period of time using various technologies.',
+    ja: 'ハッカソンで受賞した実績をまとめています。様々な技術を活用し、短期間で革新的なプロダクトを開発した経験を紹介します。',
+  },
+  'works.competitiveProgramming': {
+    en: 'Competitive Programming',
+    ja: '競技プログラミング',
+  },
+  'works.competitiveProgrammingDescription': {
+    en: 'My achievements in competitive programming. I am honing my skills in efficient code design using knowledge of algorithms and data structures.',
+    ja: '競技プログラミング関連の実績です。アルゴリズムやデータ構造の知識を活かし、効率的なコード設計能力を磨いています。',
+  },
+  'works.viewDetails': {
+    en: 'View Details',
+    ja: '詳細を見る',
+  },
+  'works.viewProfile': {
+    en: 'View Profile',
+    ja: 'プロフィールを見る',
+  },
   
   // Contact Page
   'contact.title': {
