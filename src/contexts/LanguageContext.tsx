@@ -38,8 +38,8 @@ const translations: Translations = {
   
   // Home Page
   'home.title': {
-    en: 'Web Developer & Designer',
-    ja: 'ウェブ開発者 & デザイナー',
+    en: 'Developer',
+    ja: '開発者',
   },
   'home.subtitle': {
     en: 'Creating beautiful, functional, and user-friendly web experiences with modern technologies.',
@@ -58,16 +58,16 @@ const translations: Translations = {
     ja: '自己紹介',
   },
   'home.aboutRole': {
-    en: 'Frontend Developer & UI Designer',
-    ja: 'フロントエンド開発者 & UIデザイナー',
+    en: 'Ikeuchi Akira',
+    ja: '池内 晶',
   },
   'home.aboutDesc1': {
-    en: "I'm a passionate web developer with expertise in modern frontend technologies. I specialize in creating responsive, accessible, and performant web applications with a focus on user experience.",
-    ja: '私はモダンなフロントエンド技術に精通した情熱的なウェブ開発者です。ユーザー体験を重視した、レスポンシブで、アクセシブルで、高性能なウェブアプリケーションの作成を専門としています。',
+    en: 'My name is Akira Ikeuchi. I am a first-year university student in the Faculty of Business and Data Science at Kansai University. I started programming in high school and started my own business at the age of 18. I have been entrusted with several projects and have won many awards at hackathons.',
+    ja: '池内 晶（いけうち あきら）と申します。関西大学ビジネスデータサイエンス学部に所属する大学1年生です。高校時代よりプログラミングに取り組み、18歳で起業。これまでに複数の案件を受託し、ハッカソンでは受賞経験も重ねてまいりました。',
   },
   'home.aboutDesc2': {
-    en: 'With a background in both design and development, I bring a unique perspective to every project, ensuring both aesthetic appeal and technical excellence.',
-    ja: 'デザインと開発の両方のバックグラウンドを持つことで、各プロジェクトに独自の視点をもたらし、美的魅力と技術的卓越性の両方を確保します。',
+    en: 'Always seeking new challenges, we expand our creativity through hobbies such as games, travel, and movies based on our belief that there is no time to stand still. We aim to be a pioneer of the next generation by crossing technology and imagination.',
+    ja: '常に新しい挑戦を求め、「止まっている暇はない」という信念のもと、ゲーム・旅行・映画などの趣味を通じて創造力を広げています。技術と発想力を掛け合わせ、次の時代を切り開く存在を目指しています。',
   },
   'home.learnMore': {
     en: 'Learn more about me',
