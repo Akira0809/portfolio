@@ -267,7 +267,7 @@ const translations: Translations = {
   },
   'works.developmentTitle': {
     en: 'Development Achievements',
-    ja: '開発実績（担当明記）',
+    ja: '開発実績',
   },
   'works.developmentDescription': {
     en: 'Delivered works with clearly defined roles.',
