@@ -38,9 +38,114 @@ interface CompetitiveProgramming {
   url?: string;
 }
 
+interface DevelopmentWork {
+  title: {
+    ja: string;
+    en: string;
+  };
+  client?: {
+    ja: string;
+    en: string;
+  };
+  projectType?: {
+    ja: string;
+    en: string;
+  };
+  period: {
+    ja: string;
+    en: string;
+  };
+  role: {
+    ja: string;
+    en: string;
+  };
+  technologies: string;
+  image?: string;
+}
+
 export default function WorksPage() {
   const { language, t } = useLanguage();
-  
+
+  // Development works data
+  const developmentWorks: DevelopmentWork[] = [
+    {
+      title: {
+        ja: 'DA VINCI SQUARE（パズルゲームアプリ）',
+        en: 'DA VINCI SQUARE (Puzzle Game App)',
+      },
+      client: {
+        ja: '株式会社Game',
+        en: 'Game Co., Ltd.',
+      },
+      period: {
+        ja: '2025年1月〜3月（継続中）',
+        en: 'Jan 2025 - Mar (ongoing)',
+      },
+      role: {
+        ja: 'アプリ全体を一人で開発（UI・ロジック・API連携などすべて）',
+        en: 'Sole developer for entire app (UI, logic, API integration)',
+      },
+      technologies: 'Flutter (Dart)',
+      image: '/images/placeholder.svg',
+    },
+    {
+      title: {
+        ja: 'APAPANE（子供向けエデュテイメントアプリ）',
+        en: 'APAPANE (Edutainment App for Kids)',
+      },
+      projectType: {
+        ja: '自社開発',
+        en: 'In-house project',
+      },
+      period: {
+        ja: '2023年12月〜2024年5月',
+        en: 'Dec 2023 - May 2024',
+      },
+      role: {
+        ja: '主にバックエンド（API設計・DB設計）',
+        en: 'Mainly backend (API and DB design)',
+      },
+      technologies: 'Flutter / Firebase / Figma',
+      image: '/images/placeholder.svg',
+    },
+    {
+      title: {
+        ja: 'メタバースゴルフ場（GSPro対応）',
+        en: 'Metaverse Golf Course (GSPro compatible)',
+      },
+      client: {
+        ja: '某EC企業様',
+        en: 'A certain e-commerce company',
+      },
+      period: {
+        ja: '2025年5月〜（継続中）',
+        en: 'May 2025 - present',
+      },
+      role: {
+        ja: 'コース設計・地形モデリングなど全体を一人で担当',
+        en: 'Responsible for course design and terrain modeling',
+      },
+      technologies: 'Blender / Unity',
+      image: '/images/placeholder.svg',
+    },
+    {
+      title: {
+        ja: 'Discord Bot 開発',
+        en: 'Discord Bot Development',
+      },
+      period: {
+        ja: '-',
+        en: '-',
+      },
+      role: {
+        ja: 'Discord Botの設計・実装（詳細は非公開）',
+        en: 'Designed and implemented a Discord Bot (details private)',
+      },
+      technologies: 'Python / Discord API',
+      image: '/images/placeholder.svg',
+    },
+  ];
+
   // Hackathon Awards data
   const hackathonAwards: HackathonAward[] = [
     {
@@ -238,6 +343,62 @@ export default function WorksPage() {
 
   return (
     <>
+      {/* Development Works Section */}
+      <Section
+        title={t('works.developmentTitle') || '開発実績（担当明記）'}
+        translationKey="works.developmentTitle"
+        className="bg-gray-50 dark:bg-gray-900"
+      >
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-3xl">
+          {t('works.developmentDescription') || '担当した開発実績を紹介します。'}
+        </p>
+
+        <div className="space-y-6">
+          {developmentWorks.map((work, index) => (
+            <div
+              key={index}
+              className="flex flex-col md:flex-row gap-6 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 dark:border-gray-700"
+            >
+              {work.image && (
+                <div className="relative h-32 w-full md:w-1/4">
+                  <Image
+                    src={work.image}
+                    alt={work.title[language]}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover rounded-md"
+                  />
+                </div>
+              )}
+              <div className="flex-1">
+                <h3 className="text-xl font-bold mb-2">{work.title[language]}</h3>
+                {work.client && (
+                  <p className="text-sm mb-1">
+                    {t('works.client')}:{' '}
+                    {work.client[language]}
+                  </p>
+                )}
+                {work.projectType && (
+                  <p className="text-sm mb-1">
+                    {t('works.projectType')}:{' '}
+                    {work.projectType[language]}
+                  </p>
+                )}
+                <p className="text-sm mb-1">
+                  {t('works.period')}: {work.period[language]}
+                </p>
+                <p className="text-sm mb-1">
+                  {t('works.role')}: {work.role[language]}
+                </p>
+                <p className="text-sm">
+                  {t('works.technologies')}: {work.technologies}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
       {/* Hackathon Awards Section */}
       <Section title={t('works.hackathonTitle') || "ハッカソン受賞歴"} translationKey="works.hackathonTitle">
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-3xl">

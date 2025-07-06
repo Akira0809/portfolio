@@ -265,6 +265,34 @@ const translations: Translations = {
     en: 'View Profile',
     ja: 'プロフィールを見る',
   },
+  'works.developmentTitle': {
+    en: 'Development Achievements',
+    ja: '開発実績（担当明記）',
+  },
+  'works.developmentDescription': {
+    en: 'Delivered works with clearly defined roles.',
+    ja: '担当した開発実績を紹介します。',
+  },
+  'works.client': {
+    en: 'Client',
+    ja: 'クライアント',
+  },
+  'works.projectType': {
+    en: 'Project Type',
+    ja: 'プロジェクト種別',
+  },
+  'works.period': {
+    en: 'Period',
+    ja: '期間',
+  },
+  'works.role': {
+    en: 'Role',
+    ja: '担当',
+  },
+  'works.technologies': {
+    en: 'Tech Stack',
+    ja: '使用技術',
+  },
   
   // Contact Page
   'contact.title': {
