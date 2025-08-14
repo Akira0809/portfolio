@@ -74,7 +74,7 @@ export default function WorksPage() {
         en: "DA VINCI SQUARE (Puzzle Game App)",
       },
       client: {
-        ja: "株式会社Game",
+        ja: "株式会社Game様",
         en: "Game Co., Ltd.",
       },
       period: {
