@@ -171,6 +171,14 @@ const translations: Translations = {
     en: 'A certification test for acquiring AI/deep learning literacy conducted by the Japan Deep Learning Association (JDLA).',
     ja: '一般社団法人日本ディープラーニング協会（JDLA）が実施する、AI・ディープラーニングの活⽤リテラシー習得のための検定試験',
   },
+  'about.qualification3': {
+    en: 'Fundamental Information Technology Engineer Examination',
+    ja: '基本情報技術者試験',
+  },
+  'about.qualification3Desc': {
+    en: 'National Information Technology Engineers Examination (ITEE) covering programming, algorithms, and IT management fundamentals.',
+    ja: '情報処理推進機構（IPA）が実施する国家試験で、プログラミングやアルゴリズム、ITマネジメントなど幅広い知識を問います。',
+  },
   'about.experience': {
     en: 'Experience',
     ja: '経歴',
