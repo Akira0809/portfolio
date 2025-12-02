@@ -157,6 +157,26 @@ export default function WorksPage() {
       technologies: "Python / Discord API",
       image: "/images/works/discord_bot.png",
     },
+    {
+      title: {
+        ja: "M&A仲介業向けLINEボット開発",
+        en: "LINE Bot Development for M&A Brokerage",
+      },
+      client: {
+        ja: "M&A仲介業の企業様",
+        en: "M&A brokerage firm",
+      },
+      period: {
+        ja: "2025年9月〜11月",
+        en: "Sep 2025 - Nov 2025",
+      },
+      role: {
+        ja: "実装等の開発全般を担当",
+        en: "Responsible for overall development including implementation",
+      },
+      technologies: "Python / Dify / AWS (Lambda, DynamoDB) / GAS",
+      image: "/images/works/line_bot.png",
+    },
   ];
 
   // Hackathon Awards data
@@ -321,6 +341,23 @@ export default function WorksPage() {
       date: new Date(2023, 11, 16),
       image: "/images/hackathon/giku-vol.4.png",
       tags: ["Hackathon", "Advanced", "Python", "Django", "Next.js"],
+      url: "",
+    },
+    {
+      event: {
+        ja: "第2回 Flutter Jr. ハッカソン",
+        en: "2nd Flutter Jr. Hackathon",
+      },
+      award: {
+        ja: "商店街賞",
+        en: "Shopping Street Award",
+      },
+      project: {
+        ja: "YOLOで温泉の下駄箱の空き状況を検知し、Flutter製アプリにリアルタイム共有するプロジェクトを開発。",
+        en: "Developed a Flutter app that uses YOLO to detect available hot spring shoe lockers and share the status in real time.",
+      },
+      date: new Date(2025, 8, 14),
+      tags: ["Flutter", "YOLO", "Computer Vision", "Hackathon"],
       url: "",
     },
   ];

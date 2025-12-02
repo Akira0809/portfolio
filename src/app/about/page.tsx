@@ -14,6 +14,12 @@ export default function AboutPage() {
     { category: 'Tools & Others', items: ["Git", "GitHub", "GitHub Actions", "VS Code", "AWS", "Vercel"] },
     { category: 'Mobile', items: ["Flutter", "Dart", "Adroid", "iOS", "AdMob"] },
   ];
+  const qualifications = [
+    { title: t('about.qualification0'), description: t('about.qualification0Desc') },
+    { title: t('about.qualification1'), description: t('about.qualification1Desc') },
+    { title: t('about.qualification2'), description: t('about.qualification2Desc') },
+    { title: t('about.qualification3'), description: t('about.qualification3Desc') },
+  ];
 
   const experiences = [
     {
@@ -110,21 +116,13 @@ export default function AboutPage() {
 
       {/* Qualifications Section */}
       <Section title={t('about.qualifications')}>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">{t('about.qualification0')}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{t('about.qualification0Desc')}</p>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">{t('about.qualification1')}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{t('about.qualification1Desc')}</p>
-          </div>
-
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-4">{t('about.qualification2')}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{t('about.qualification2Desc')}</p>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {qualifications.map((qualification, index) => (
+            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold mb-4">{qualification.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400">{qualification.description}</p>
+            </div>
+          ))}
         </div>
       </Section>
 
