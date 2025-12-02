@@ -2,6 +2,7 @@
 
 import Section from "@/components/Section";
 import Image from "next/image";
+import { useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 // Define interfaces for each section
@@ -65,6 +66,18 @@ interface DevelopmentWork {
 
 export default function WorksPage() {
   const { language, t } = useLanguage();
+
+  // Inject the L-Step site script when this page mounts
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://lstep.app/s/98442/orczlX";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   // Development works data
   const developmentWorks: DevelopmentWork[] = [
