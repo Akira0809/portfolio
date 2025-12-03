@@ -2,7 +2,6 @@
 
 import Section from "@/components/Section";
 import Image from "next/image";
-import { useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 // Define interfaces for each section
@@ -66,19 +65,6 @@ interface DevelopmentWork {
 
 export default function WorksPage() {
   const { language, t } = useLanguage();
-  const youtubeEmbedUrl = "https://www.youtube.com/embed/kwPCZo_cvDI";
-
-  // Inject the L-Step site script when this page mounts
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://lstep.app/s/98442/orczlX";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   // Development works data
   const developmentWorks: DevelopmentWork[] = [
@@ -396,22 +382,6 @@ export default function WorksPage() {
 
   return (
     <>
-      {/* Embedded talk/demo video */}
-      <div className="w-full max-w-4xl mx-auto mb-12 px-4 md:px-0">
-        <div
-          className="relative w-full overflow-hidden rounded-lg shadow-lg"
-          style={{ paddingBottom: "56.25%" }}
-        >
-          <iframe
-            title="YouTube video player"
-            src={youtubeEmbedUrl}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="absolute inset-0 h-full w-full border-0"
-          />
-        </div>
-      </div>
-
       {/* Development Works Section */}
       <Section
         title={t("works.developmentTitle") || "開発実績"}
