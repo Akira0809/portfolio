@@ -195,6 +195,18 @@ const translations: Translations = {
     en: 'We are commissioned to work on a variety of projects and focus on web development and mobile app development.',
     ja: '様々な案件を受託し、ウェブ開発とモバイルアプリ開発を中心に活動しています。',
   },
+  'about.experienceDesc1': {
+    en: 'Appointed COO at Liberka Inc.',
+    ja: '株式会社Liberka COO就任',
+  },
+  'about.experienceDesc1Company': {
+    en: 'Liberka Inc.',
+    ja: '株式会社Liberka',
+  },
+  'about.experienceDesc1Description': {
+    en: 'Serving as COO at Liberka Inc. since June 5, 2026.',
+    ja: '2026年6月5日より、株式会社LiberkaのCOOに就任しました。',
+  },
   'about.education': {
     en: 'Education',
     ja: '学歴',

@@ -27,7 +27,13 @@ export default function AboutPage() {
       title: t('about.experienceDesc0'),
       company: t('about.experienceDesc0Company'),
       description: t('about.experienceDesc0Description'),
-    }
+    },
+    {
+      period: '2026 - ',
+      title: t('about.experienceDesc1'),
+      company: t('about.experienceDesc1Company'),
+      description: t('about.experienceDesc1Description'),
+    },
   ];
 
   const education = [
